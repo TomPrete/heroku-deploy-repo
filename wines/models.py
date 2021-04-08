@@ -8,4 +8,4 @@ class Wine(models.Model):
   description = models.TextField()
 
   def __str__(self):
-    return self.wine_name
+    return f"{self.wine_name} {self.price} {self.varietal}"
